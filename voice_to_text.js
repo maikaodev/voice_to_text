@@ -6,11 +6,10 @@ const recognition = createRecognition();
 let listening = false;
 
 if (recognition) {
-  button.addEventListener('click', () =>{
-    listening = !listening;
+  button.addEventListener('click', () => {
+    listening ? recognition.stop() : recognition.start()
     button.textContent = listening ? 'Parar de escutar' : 'Aperte para falar'
   })
-
 } else {
   button.disabled = true
   // TODO: Melhorar mensagem para leigos
@@ -25,5 +24,26 @@ function createRecognition() {
     return
   }
 
-  return true
+  const recognition = new SpeechRecognition();
+
+  recognition.lang = "pt_BR"
+
+  recognition.onstart = () => {
+    listening = true 
+  }
+
+  recognition.onend = () => {
+    listening = false
+  }
+
+  recognition.onerror = err => {
+    console.error(err)
+  }
+
+  recognition.onresult = evt => {
+    console.log(evt)
+    textarea.textContent = evt.results[0][0].transcript
+  }
+
+  return recognition
 }
