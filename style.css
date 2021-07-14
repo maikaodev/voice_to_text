@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial;
 }
 .box {
   display: flex;
@@ -16,14 +17,24 @@
   min-height: 100px;
   resize: none;
 }
+
 .btn {
   padding: 8px 16px;
   background: none;
   border: solid 1px #000000;
   border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
   font-weight: bold;
 }
+
+.btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 .btns {
   display: flex;
   justify-content: center;
+  gap: 16px;
 }

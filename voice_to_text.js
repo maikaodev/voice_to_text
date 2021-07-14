@@ -1,4 +1,6 @@
-const button = document.querySelector('.btn');
+const buttonControl = document.querySelector('.btn.control'); //Encadear classe não pode ter espaço.
+const buttonTelegram = document.querySelector('.btn.telegram');
+const buttonWhatsApp = document.querySelector('.btn.whatsapp');
 const textarea = document.querySelector('.text');
 
 const recognition = createRecognition();
@@ -6,11 +8,11 @@ const recognition = createRecognition();
 let listening = false;
 
 if (recognition) {
-  button.addEventListener('click', () => {
+  buttonControl.addEventListener('click', () => {
     listening ? recognition.stop() : recognition.start()
   })
 } else {
-  button.disabled = true
+  buttonControl.disabled = true
   // TODO: Melhorar mensagem para leigos
   textarea.textContent = 'A API SpeechRecognition não está disponível'
 }
@@ -44,11 +46,22 @@ function createRecognition() {
   recognition.onresult = evt => {
     console.log(evt)
     textarea.textContent = evt.results[0][0].transcript
+    activeShareButtons();
   }
 
   return recognition
 }
 
 function updateButtonText(){
-  button.textContent = listening ? 'Parar de escutar' : 'Aperte para falar'
+  buttonControl.textContent = listening ? 'Parar de escutar' : 'Aperte para falar'
+}
+
+function activeShareButtons(){
+  buttonTelegram.classList.remove('disabled')
+  buttonWhatsApp.classList.remove('disabled')
+
+  const text = textarea.textContent
+
+  buttonTelegram.href = `https://t.me/share/url?text=${text}`
+  buttonWhatsApp.href = `https://api.whatsapp.com/send?text=${text}`
 }
