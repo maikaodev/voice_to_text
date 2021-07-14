@@ -13,7 +13,6 @@ if (recognition) {
   })
 } else {
   buttonControl.disabled = true
-  // TODO: Melhorar mensagem para leigos
   textarea.textContent = 'A API SpeechRecognition não está disponível'
 }
 
