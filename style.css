@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+.text {
+  border: solid 1px #000000;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  min-height: 100px;
+}
+.btn {
+  padding: 8px 16px;
+  background: none;
+  border: solid 1px #000000;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+}
