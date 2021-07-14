@@ -8,7 +8,6 @@ let listening = false;
 if (recognition) {
   button.addEventListener('click', () => {
     listening ? recognition.stop() : recognition.start()
-    button.textContent = listening ? 'Parar de escutar' : 'Aperte para falar'
   })
 } else {
   button.disabled = true
@@ -30,10 +29,12 @@ function createRecognition() {
 
   recognition.onstart = () => {
     listening = true 
+    updateButtonText()
   }
 
   recognition.onend = () => {
     listening = false
+    updateButtonText()
   }
 
   recognition.onerror = err => {
@@ -46,4 +47,8 @@ function createRecognition() {
   }
 
   return recognition
+}
+
+function updateButtonText(){
+  button.textContent = listening ? 'Parar de escutar' : 'Aperte para falar'
 }
