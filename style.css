@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial;
+  color: black;
 }
 body{  
   padding: 16px;
@@ -20,6 +21,17 @@ body{
   display: flex;
   flex-direction: column;
 }
+.sr-only{
+  position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
 .text {
   border: solid 1px #000000;
   border-radius: 8px;
@@ -28,21 +40,40 @@ body{
   min-height: 100px;
   resize: none;
 }
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
 .btn {
+  background-color: #222;
+  color: #eee;
+  border: none;
   padding: 8px 16px;
-  background: none;
-  border: solid 1px #000000;
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: bold;  
+  text-decoration: none;
+  text-align: center;
 }
+.btn.whatsapp{
+  background-color:#25D366;
+}
+.btn.telegram{
+  background-color:#0088cc;
+}
+
 .btn.disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
-.btns {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
+
+/* Responsividade */
+
+@media only screen and (min-width: 768px) {
+.btns{
+  flex-direction: row;
+}
 }
