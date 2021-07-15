@@ -7,7 +7,7 @@
 
 ## Melhorias
 
-- [ ] Alterar estilos dos share buttons
+- [x] Alterar estilos dos share buttons
 - [ ] Atualizar link ao alterar textarea
 - [ ] Investigar por que não funciona no meu computador
 - [ ] Melhorar mensagem quando API SpeechRecognition não existe
