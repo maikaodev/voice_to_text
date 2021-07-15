@@ -71,6 +71,6 @@ function activeShareButtons() {
 }
 
 function updateShareButtons(text) {
-  buttonTelegram.href = `https://t.me/share/url?text=${text}`;
-  buttonWhatsApp.href = `https://api.whatsapp.com/send?text=${text}`;
+  buttonTelegram.href = `https://t.me/share/url?text=${encodeURIComponent(text)}`;
+  buttonWhatsApp.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
 }
