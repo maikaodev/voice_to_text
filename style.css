@@ -4,16 +4,21 @@
   box-sizing: border-box;
   font-family: Arial;
 }
-.idioma{
+body{  
+  padding: 16px;
+}
+.language-select{
   display: flex;
-  margin: 8px;
   gap: 16px;
-  align-items:flex-end;
+  align-items:center;
+  margin-bottom: 8px;
+}
+.language-select select{
+  padding: 4px;
 }
 .box {
   display: flex;
   flex-direction: column;
-  padding: 16px;
 }
 .text {
   border: solid 1px #000000;
@@ -23,7 +28,6 @@
   min-height: 100px;
   resize: none;
 }
-
 .btn {
   padding: 8px 16px;
   background: none;
@@ -33,12 +37,10 @@
   font-size: 14px;
   font-weight: bold;
 }
-
 .btn.disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
-
 .btns {
   display: flex;
   justify-content: center;

@@ -4,7 +4,6 @@ const buttonWhatsApp = document.querySelector('.btn.whatsapp');
 const textarea = document.querySelector('.text');
 const language = document.getElementById('language');
 
-
 const recognition = createRecognition();
 
 let listening = false;
