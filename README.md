@@ -14,3 +14,4 @@
 - [ ] Tratar e exibir erros de permissão e execução
 - [ ] Adicionar seleção de idiomas
 - [ ] Usar API Navigator.share
+- [ ] Quando trocar o idioma alterar em todo html

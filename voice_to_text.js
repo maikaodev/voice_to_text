@@ -2,6 +2,7 @@ const buttonControl = document.querySelector('.btn.control'); //Encadear classe 
 const buttonTelegram = document.querySelector('.btn.telegram');
 const buttonWhatsApp = document.querySelector('.btn.whatsapp');
 const textarea = document.querySelector('.text');
+const language = document.getElementById('language');
 
 const recognition = createRecognition();
 
@@ -9,7 +10,12 @@ let listening = false;
 
 if (recognition) {
   buttonControl.addEventListener('click', () => {
-    listening ? recognition.stop() : recognition.start()
+    if(listening){
+      recognition.stop();
+    }else{
+      recognition.lang = language.value
+      recognition.start();
+    }
   })
 } else {
   buttonControl.disabled = true
@@ -26,16 +32,14 @@ function createRecognition() {
 
   const recognition = new SpeechRecognition();
 
-  recognition.lang = "pt_BR"
-
   recognition.onstart = () => {
     listening = true 
-    updateButtonText()
+    updateButtonText();
   }
 
   recognition.onend = () => {
     listening = false
-    updateButtonText()
+    updateButtonText();
   }
 
   recognition.onerror = err => {
