@@ -9,7 +9,7 @@
 body{  
   padding: 16px;
 }
-
+/* HEADER */
 header{
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@ header .button-copy img{
   height: 5vh;
   cursor: pointer;  
 }
-
+/* MAIN */
 main .box {
   display: flex;
   flex-direction: column;
@@ -101,6 +101,27 @@ main .text {
   cursor: not-allowed;
   opacity: 0.5;
 }
+
+/* FOOTER - social media */
+
+footer .social-media{
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .social-media a img {
+ height: 8vh;
+ width: 8vw;
+ transition: all 0.5s;
+}
+
+footer .social-media a img:hover{
+  transform: scale(1.15);
+}
+
+
+
+
 
 /* Responsividade */
 

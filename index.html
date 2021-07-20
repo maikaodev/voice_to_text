@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voice to Text | maikaodev</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
   </head>
 
   <body>
@@ -22,7 +22,7 @@
 
     <div class="button-copy">
       <button id="copy-btn">
-        <img src="./copy-button.svg" alt="copiar" />
+        <img src="./img/copy-button.svg" alt="copiar" />
       </button>
     </div>
     
@@ -35,17 +35,17 @@
       <textarea class="text" id="result"></textarea>
       <div class="btns">
         <button class="btn control"> 
-          <img src="./microphone-button.svg" alt="microphone-button">
+          <img src="./img/microphone-button.svg" alt="microphone-button">
            Aperte para falar
           </button>
 
-        <a class="btn  whatsapp"> 
-          <img src="./whatsapp-button-2.svg" alt="img-whatsapp"> 
+        <a class="btn disabled whatsapp"> 
+          <img src="./img/whatsapp-button-2.svg" alt="img-whatsapp"> 
           Enviar no WhatsApp
         </a>
 
-        <a class="btn  telegram"> 
-          <img src="./telegram-button.svg" alt="img-telegram"> 
+        <a class="btn disabled telegram"> 
+          <img src="./img/telegram-button.svg" alt="img-telegram"> 
           Enviar no Telegram
         </a>
 
@@ -53,6 +53,25 @@
     </div>
 
   </main>
+
+  <footer>
+    <div class="social-media">
+
+    <a href="https://github.com/maikaodev">
+      <img src="./img/github.svg" alt="github">
+    </a>
+
+    <a href="https://www.instagram.com/maikaodev/">
+      <img src="./img/instagram.svg" alt="instagram">
+    </a>
+
+    <a href="https://twitter.com/maikaodev">
+      <img src="./img/twitter.svg" alt="twitter">
+    </a>
+
+  </div>
+  </footer>
+
     <script src="./voice_to_text.js"></script>
   </body>
 </html>
