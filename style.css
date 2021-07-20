@@ -88,6 +88,9 @@ main .text {
   text-decoration: none;
   text-align: center;  
 }
+.btn.whatsapp, .btn.telegram{
+ transition: all 0.5s;
+}
 
 .btn.whatsapp{
   background-color:#1BD741;
