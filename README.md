@@ -11,11 +11,15 @@
 - [x] Atualizar link ao alterar textarea
 - [x] Adicionar seleção de idiomas
 - [x] Adicionar um botão para copiar todo o textarea
+- [x] Inserir o link do GitHub na página
 - [x] Inserir icones nos shareButtons
-- [ ] Inserir transição nos shareButtons
+- [x] Inserir transição nos shareButtons
+- [x] Tamanho dos icones
+- [x] Transf. scale estraga o layout
+- [ ] Importar a biblioteca de icones
+- [ ] Após pressionar para falar o ícone some
 - [ ] Melhorar mensagem quando API SpeechRecognition não existe
 - [ ] Tratar e exibir erros de permissão e execução
 - [ ] Usar API Navigator.share
 - [ ] Quando trocar o idioma alterar em todo html
-- [ ] Inserir o link do GitHub na página
 - [ ] Investigar por que não funciona no meu computador

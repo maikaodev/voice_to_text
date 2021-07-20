@@ -5,53 +5,62 @@
   font-family: Arial;
   color: black;
 }
-
-body{  
-  padding: 16px;
+body,
+html {
+  height: 100vh;
 }
 
-header{
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+/* HEADER */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header .language-select{
+header .language-select {
   display: flex;
   gap: 16px;
-  align-items:center;
-  margin-bottom: 8px;
+  align-items: center;
 }
 
-header .language-select select{
+header .language-select select {
   padding: 4px;
 }
 
-header .button-copy #copy-btn{
+header .button-copy #copy-btn {
   background: none;
   border: none;
 }
 
-header .button-copy img{
-  width: 5vW;
-  height: 5vh;
-  cursor: pointer;  
+header .button-copy img {
+  height: 24px;
+  cursor: pointer;
+}
+/* MAIN */
+main {
+  flex: 1;
 }
 
 main .box {
   display: flex;
   flex-direction: column;
 }
-main .sr-only{
+main .sr-only {
   position: absolute;
-    height: 1px;
-    width: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: rect(0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 main .text {
@@ -62,21 +71,22 @@ main .text {
   min-height: 100px;
   resize: vertical;
 }
-
 .btns {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 16px;
 }
-.btns a img, .btns button img{
-  height: 3vh;
+.btns a img,
+.btns button img {
+  height: 24px;
   margin-right: 8px;
 }
 
 .btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: white;
   color: #222;
   border: 2px solid #222;
@@ -84,17 +94,21 @@ main .text {
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
-  font-weight: bold;  
+  font-weight: bold;
   text-decoration: none;
-  text-align: center;  
+  text-align: center;
+}
+.btn.whatsapp,
+.btn.telegram {
+  transition: all 0.5s;
 }
 
-.btn.whatsapp{
-  background-color:#1BD741;
+.btn.whatsapp {
+  background-color: #1bd741;
 }
 
-.btn.telegram{
-  background-color:#0088cc;
+.btn.telegram {
+  background-color: #0099e6;
 }
 
 .btn.disabled {
@@ -102,10 +116,26 @@ main .text {
   opacity: 0.5;
 }
 
+/* FOOTER - social media */
+
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+footer .social-media a img {
+  height: 32px;
+  transition: all 0.5s;
+}
+
+footer .social-media a img:hover {
+  transform: scale(1.15);
+}
+
 /* Responsividade */
 
 @media only screen and (min-width: 768px) {
-.btns{
-  flex-direction: row;
-}
+  .btns {
+    flex-direction: row;
+  }
 }

@@ -1,4 +1,5 @@
 const buttonControl = document.querySelector(".btn.control"); //Encadear classe não pode ter espaço.
+const buttonControlText = buttonControl.querySelector("span")
 const buttonTelegram = document.querySelector(".btn.telegram");
 const buttonWhatsApp = document.querySelector(".btn.whatsapp");
 const textarea = document.querySelector(".text");
@@ -50,7 +51,7 @@ function createRecognition() {
     console.error(err);
   };
 
-  recognition.onresult = (evt) => {    
+  recognition.onresult = (evt) => {
     textarea.textContent = evt.results[0][0].transcript;
     activeShareButtons();
     updateShareButtons(textarea.textContent);
@@ -60,7 +61,7 @@ function createRecognition() {
 }
 
 function updateButtonText() {
-  buttonControl.textContent = listening
+  buttonControlText.textContent = listening
     ? "Parar de escutar"
     : "Aperte para falar";
 }
@@ -71,11 +72,15 @@ function activeShareButtons() {
 }
 
 function updateShareButtons(text) {
-  buttonTelegram.href = `https://t.me/share/url?text=${encodeURIComponent(text)}`;
-  buttonWhatsApp.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+  buttonTelegram.href = `https://t.me/share/url?text=${encodeURIComponent(
+    text
+  )}`;
+  buttonWhatsApp.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(
+    text
+  )}`;
 }
 
-document.getElementById("copy-btn").addEventListener("click", () =>{
+document.getElementById("copy-btn").addEventListener("click", () => {
   document.getElementById("result").select();
-  document.execCommand('copy');
-})
+  document.execCommand("copy");
+});
