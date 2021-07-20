@@ -10,7 +10,7 @@
 - [x] Alterar estilos dos share buttons
 - [x] Atualizar link ao alterar textarea
 - [x] Adicionar seleção de idiomas
-- [ ] Adicionar um botão para copiar todo o textarea
+- [x] Adicionar um botão para copiar todo o textarea
 - [ ] Melhorar mensagem quando API SpeechRecognition não existe
 - [ ] Tratar e exibir erros de permissão e execução
 - [ ] Usar API Navigator.share
