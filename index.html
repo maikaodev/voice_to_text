@@ -11,66 +11,60 @@
 
   <body>
     <header>
-    <div class="language-select">
-      <label for="language"> Selecione o idioma </label>
-      <select name="select" id="language">
-        <option value="pt-BR" selected>Português</option>
-        <option value="en-US">English</option>
-        <option value="sv-SE">Svenska</option>
-      </select>
-    </div>
+      <div class="language-select">
+        <label for="language"> Selecione o idioma </label>
+        <select name="select" id="language">
+          <option value="pt-BR" selected>Português</option>
+          <option value="en-US">English</option>
+          <option value="sv-SE">Svenska</option>
+        </select>
+      </div>
 
-    <div class="button-copy">
-      <button id="copy-btn">
-        <img src="./img/copy-button.svg" alt="copiar" />
-      </button>
-    </div>
-    
-  </header>
+      <div class="button-copy">
+        <button id="copy-btn">
+          <img src="./img/copy-button.svg" alt="copiar" />
+        </button>
+      </div>
+    </header>
 
     <main>
-
-    <div class="box">
-      <label class="sr-only" for="result">Resultado da fala</label>
-      <textarea class="text" id="result"></textarea>
-      <div class="btns">
-        <button class="btn control"> 
-          <img src="./img/microphone-button.svg" alt="microphone-button">
-           Aperte para falar
+      <div class="box">
+        <label class="sr-only" for="result">Resultado da fala</label>
+        <textarea class="text" id="result"></textarea>
+        <div class="btns">
+          <button class="btn control">
+            <img src="./img/microphone-button.svg" alt="microphone-button" />
+            <span>Aperte para falar</span>
           </button>
 
-        <a class="btn disabled whatsapp"> 
-          <img src="./img/whatsapp-button-2.svg" alt="img-whatsapp"> 
-          Enviar no WhatsApp
-        </a>
+          <a class="btn whatsapp">
+            <img src="./img/whatsapp-button-2.svg" alt="img-whatsapp" />
+            Enviar no WhatsApp
+          </a>
 
-        <a class="btn disabled telegram"> 
-          <img src="./img/telegram-button.svg" alt="img-telegram"> 
-          Enviar no Telegram
-        </a>
-
+          <a class="btn telegram">
+            <img src="./img/telegram-button.svg" alt="img-telegram" />
+            Enviar no Telegram
+          </a>
+        </div>
       </div>
-    </div>
+    </main>
 
-  </main>
+    <footer>
+      <div class="social-media">
+        <a href="https://github.com/maikaodev" target="_blank">
+          <img src="./img/github.svg" alt="github" />
+        </a>
 
-  <footer>
-    <div class="social-media">
+        <a href="https://www.instagram.com/maikaodev/" target="_blank">
+          <img src="./img/instagram.svg" alt="instagram" />
+        </a>
 
-    <a href="https://github.com/maikaodev">
-      <img src="./img/github.svg" alt="github">
-    </a>
-
-    <a href="https://www.instagram.com/maikaodev/">
-      <img src="./img/instagram.svg" alt="instagram">
-    </a>
-
-    <a href="https://twitter.com/maikaodev">
-      <img src="./img/twitter.svg" alt="twitter">
-    </a>
-
-  </div>
-  </footer>
+        <a href="https://twitter.com/maikaodev" target="_blank">
+          <img src="./img/twitter.svg" alt="twitter" />
+        </a>
+      </div>
+    </footer>
 
     <script src="./voice_to_text.js"></script>
   </body>

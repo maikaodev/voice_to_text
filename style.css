@@ -4,11 +4,16 @@
   box-sizing: border-box;
   font-family: Arial;
   color: black;
-  overflow: hidden;
+}
+body, html{
+  height:100vh;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   padding: 16px;
+  gap: 16px;
 }
 /* HEADER */
 header {
@@ -21,7 +26,6 @@ header .language-select {
   display: flex;
   gap: 16px;
   align-items: center;
-  margin-bottom: 8px;
 }
 
 header .language-select select {
@@ -34,11 +38,14 @@ header .button-copy #copy-btn {
 }
 
 header .button-copy img {
-  width: 5vw;
-  height: 5vh;
+  height: 24px;
   cursor: pointer;
 }
 /* MAIN */
+main{
+  flex: 1;
+}
+
 main .box {
   display: flex;
   flex-direction: column;
@@ -65,18 +72,20 @@ main .text {
 }
 .btns {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 16px;
 }
 .btns a img,
 .btns button img {
-  height: 3vh;
+  height: 24px;
   margin-right: 8px;
 }
 
 .btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: white;
   color: #222;
   border: 2px solid #222;
@@ -98,7 +107,7 @@ main .text {
 }
 
 .btn.telegram {
-  background-color: #0088cc;
+  background-color: #0099e6;
 }
 
 .btn.disabled {
@@ -108,17 +117,14 @@ main .text {
 
 /* FOOTER - social media */
 
-footer {
-  margin-top: 450px;
-}
 
 footer .social-media {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  gap: 16px;
 }
 footer .social-media a img {
-  height: 8vh;
-  width: 8vw;
+  height: 32px;
   transition: all 0.5s;
 }
 
@@ -128,44 +134,8 @@ footer .social-media a img:hover {
 
 /* Responsividade */
 
-@media only screen and (max-width: 1024px) {
- footer{
-   margin-top: 650px;
- }
- footer .social-media a{
-  padding: 16px;
-}
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .btns{
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .btns button, .btns a{
-    justify-content:center;
-  }
-  footer{
-    margin-top: 515px;
-  }
-  footer .social-media a img {
-    height: 8vh;
-    width: 8vw;
-  }
-}
-
-@media only screen and (max-width: 426px) {
-  .btns button, .btns a{
-    justify-content:center;
-  }
-  footer{
-    margin-top: 450px;
-  }
-  footer .social-media a{
-    padding: 8px;
-  }
-  footer .social-media a img {
-    height: 16vh;
-    width: 16vw;
+    flex-direction: row;
   }
 }
