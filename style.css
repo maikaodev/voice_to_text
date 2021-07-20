@@ -6,52 +6,52 @@
   color: black;
 }
 
-body{  
+body {
   padding: 16px;
 }
 /* HEADER */
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header .language-select{
+header .language-select {
   display: flex;
   gap: 16px;
-  align-items:center;
+  align-items: center;
   margin-bottom: 8px;
 }
 
-header .language-select select{
+header .language-select select {
   padding: 4px;
 }
 
-header .button-copy #copy-btn{
+header .button-copy #copy-btn {
   background: none;
   border: none;
 }
 
-header .button-copy img{
-  width: 5vW;
+header .button-copy img {
+  width: 5vw;
   height: 5vh;
-  cursor: pointer;  
+  cursor: pointer;
 }
 /* MAIN */
 main .box {
   display: flex;
   flex-direction: column;
 }
-main .sr-only{
+main .sr-only {
   position: absolute;
-    height: 1px;
-    width: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: rect(0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 main .text {
@@ -69,7 +69,8 @@ main .text {
   justify-content: center;
   gap: 16px;
 }
-.btns a img, .btns button img{
+.btns a img,
+.btns button img {
   height: 3vh;
   margin-right: 8px;
 }
@@ -84,20 +85,21 @@ main .text {
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
-  font-weight: bold;  
+  font-weight: bold;
   text-decoration: none;
-  text-align: center;  
+  text-align: center;
 }
-.btn.whatsapp, .btn.telegram{
- transition: all 0.5s;
-}
-
-.btn.whatsapp{
-  background-color:#1BD741;
+.btn.whatsapp,
+.btn.telegram {
+  transition: all 0.5s;
 }
 
-.btn.telegram{
-  background-color:#0088cc;
+.btn.whatsapp {
+  background-color: #1bd741;
+}
+
+.btn.telegram {
+  background-color: #0088cc;
 }
 
 .btn.disabled {
@@ -107,29 +109,37 @@ main .text {
 
 /* FOOTER - social media */
 
-footer .social-media{
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-}
-footer .social-media a img {
- height: 8vh;
- width: 8vw;
- transition: all 0.5s;
+footer {
+  margin-top: 470px;
 }
 
-footer .social-media a img:hover{
+footer .social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .social-media a img {
+  height: 6vh;
+  width: 6vw;
+  transition: all 0.5s;
+}
+
+footer .social-media a img:hover {
   transform: scale(1.15);
 }
 
-
-
-
-
 /* Responsividade */
-
 @media only screen and (min-width: 768px) {
-.btns{
-  flex-direction: row;
+  footer {
+    margin-top: 400px;
+  }
 }
+@media only screen and (min-width: 768px) {
+  .btns {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 426px) {
+  footer {
+    margin-top: 300px;
+  }
 }
