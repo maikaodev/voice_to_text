@@ -27,7 +27,7 @@ header .language-select select{
   padding: 4px;
 }
 
-header .button-copy.copy-btn{
+header .button-copy #copy-btn{
   background: none;
   border: none;
 }
