@@ -5,8 +5,9 @@
   font-family: Arial;
   color: black;
 }
-body, html{
-  height:100vh;
+body,
+html {
+  height: 100vh;
 }
 
 body {
@@ -42,7 +43,7 @@ header .button-copy img {
   cursor: pointer;
 }
 /* MAIN */
-main{
+main {
   flex: 1;
 }
 
@@ -71,10 +72,10 @@ main .text {
   resize: vertical;
 }
 .btns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
 }
 .btns a img,
 .btns button img {
@@ -117,7 +118,6 @@ main .text {
 
 /* FOOTER - social media */
 
-
 footer .social-media {
   display: flex;
   justify-content: center;
@@ -135,7 +135,7 @@ footer .social-media a img:hover {
 /* Responsividade */
 
 @media only screen and (min-width: 768px) {
-  .btns{
+  .btns {
     flex-direction: row;
   }
 }
