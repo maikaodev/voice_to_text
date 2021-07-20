@@ -23,3 +23,4 @@
 - [ ] Usar API Navigator.share
 - [ ] Quando trocar o idioma alterar em todo html
 - [ ] Investigar por que não funciona no meu computador
+- [ ] Continuar gravação até o botão parar para falar seja pressionado
