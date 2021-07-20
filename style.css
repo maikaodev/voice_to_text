@@ -5,23 +5,44 @@
   font-family: Arial;
   color: black;
 }
+
 body{  
   padding: 16px;
 }
-.language-select{
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .language-select{
   display: flex;
   gap: 16px;
   align-items:center;
   margin-bottom: 8px;
 }
-.language-select select{
+
+header .language-select select{
   padding: 4px;
 }
-.box {
+
+header .button-copy.copy-btn{
+  background: none;
+  border: none;
+}
+
+header .button-copy img{
+  width: 5vW;
+  height: 5vh;
+  cursor: pointer;  
+}
+
+main .box {
   display: flex;
   flex-direction: column;
 }
-.sr-only{
+main .sr-only{
   position: absolute;
     height: 1px;
     width: 1px;
@@ -32,7 +53,8 @@ body{
     white-space: nowrap;
     border-width: 0;
 }
-.text {
+
+main .text {
   border: solid 1px #000000;
   border-radius: 8px;
   padding: 16px;
@@ -40,12 +62,14 @@ body{
   min-height: 100px;
   resize: vertical;
 }
+
 .btns {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 16px;
 }
+
 .btn {
   background-color: #222;
   color: #eee;
@@ -58,9 +82,11 @@ body{
   text-decoration: none;
   text-align: center;
 }
+
 .btn.whatsapp{
   background-color:#25D366;
 }
+
 .btn.telegram{
   background-color:#0088cc;
 }

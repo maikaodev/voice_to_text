@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice to Text | maikaodev</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voice to Text | maikaodev</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-</head>
-
-<body>
-
-  <div class="language-select">
-    <label for="language">
-      Selecione o idioma
-    </label>
-  <select name="select" id="language"> 
-    <option value="pt-BR" selected>Português</option>
-    <option value="en-US">English</option>
-    <option value="sv-SE">Svenska</option>
-  </select>
-</div>
-
-  <div class="box">
-    <label class="sr-only" for="result">Resultado da fala</label>
-    <textarea class="text" id="result"></textarea>
-    <div class="btns">
-      <button class="btn control">Aperte para falar</button>
-      <a class="btn disabled whatsapp">Enviar no WhatsApp</a>
-      <a class="btn disabled telegram">Enviar no Telegram</a>
+  <body>
+    <header>
+    <div class="language-select">
+      <label for="language"> Selecione o idioma </label>
+      <select name="select" id="language">
+        <option value="pt-BR" selected>Português</option>
+        <option value="en-US">English</option>
+        <option value="sv-SE">Svenska</option>
+      </select>
     </div>
-  </div>
-  <script src="./voice_to_text.js"></script>
-</body>
 
+    <div class="button-copy">
+      <button id="copy-btn">
+        <img src="./copy-button.svg" alt="copiar" />
+      </button>
+    </div>
+    
+  </header>
+
+    <main>
+
+    <div class="box">
+      <label class="sr-only" for="result">Resultado da fala</label>
+      <textarea class="text" id="result"></textarea>
+      <div class="btns">
+        <button class="btn control">Aperte para falar</button>
+        <a class="btn disabled whatsapp">Enviar no WhatsApp</a>
+        <a class="btn disabled telegram">Enviar no Telegram</a>
+      </div>
+    </div>
+
+  </main>
+    <script src="./voice_to_text.js"></script>
+  </body>
 </html>

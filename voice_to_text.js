@@ -74,3 +74,8 @@ function updateShareButtons(text) {
   buttonTelegram.href = `https://t.me/share/url?text=${encodeURIComponent(text)}`;
   buttonWhatsApp.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
 }
+
+document.getElementById("copy-btn").addEventListener("click", () =>{
+  document.getElementById("result").select();
+  document.execCommand('copy');
+})

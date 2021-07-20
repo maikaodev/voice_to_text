@@ -9,9 +9,13 @@
 
 - [x] Alterar estilos dos share buttons
 - [x] Atualizar link ao alterar textarea
-- [ ] Investigar por que não funciona no meu computador
+- [x] Adicionar seleção de idiomas
+- [ ] Adicionar um botão para copiar todo o textarea
 - [ ] Melhorar mensagem quando API SpeechRecognition não existe
 - [ ] Tratar e exibir erros de permissão e execução
-- [x] Adicionar seleção de idiomas
 - [ ] Usar API Navigator.share
 - [ ] Quando trocar o idioma alterar em todo html
+- [ ] Inserir transição nos shareButtons
+- [ ] Inserir icones nos shareButtons
+- [ ] Inserir o link do GitHub na página
+- [ ] Investigar por que não funciona no meu computador
