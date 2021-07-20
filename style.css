@@ -38,8 +38,8 @@ header .button-copy #copy-btn {
   border: none;
 }
 
-header .button-copy img {
-  height: 24px;
+header .button-copy i {
+  font-size: 24px;
   cursor: pointer;
 }
 /* MAIN */
@@ -77,9 +77,10 @@ main .text {
   justify-content: center;
   gap: 16px;
 }
-.btns a img,
-.btns button img {
-  height: 24px;
+.btns a i,
+.btns button i {
+  text-align: center;
+  font-size: 24px;
   margin-right: 8px;
 }
 
@@ -123,12 +124,12 @@ footer .social-media {
   justify-content: center;
   gap: 16px;
 }
-footer .social-media a img {
-  height: 32px;
+footer .social-media a i {
+  font-size: 32px;
   transition: all 0.5s;
 }
 
-footer .social-media a img:hover {
+footer .social-media a i:hover {
   transform: scale(1.15);
 }
 
