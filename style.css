@@ -128,7 +128,12 @@ footer .social-media a img:hover {
 }
 
 /* Responsividade */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
+  footer {
+    margin-top: 490px;
+  }
+}
+@media only screen and (max-width: 1024px) {
   footer {
     margin-top: 400px;
   }
