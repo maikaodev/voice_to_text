@@ -108,7 +108,7 @@ main .text {
 /* FOOTER - social media */
 
 footer {
-  margin-top: 470px;
+  margin-top: 450px;
 }
 
 footer .social-media {
@@ -116,8 +116,8 @@ footer .social-media {
   justify-content: flex-end;
 }
 footer .social-media a img {
-  height: 6vh;
-  width: 6vw;
+  height: 8vh;
+  width: 8vw;
   transition: all 0.5s;
 }
 
@@ -129,10 +129,10 @@ footer .social-media a img:hover {
 
 @media only screen and (max-width: 1024px) {
  footer{
-   margin-top: 560px;
+   margin-top: 650px;
  }
  footer .social-media a{
-  padding: 8px;
+  padding: 16px;
 }
 }
 
@@ -145,25 +145,26 @@ footer .social-media a img:hover {
     justify-content:center;
   }
   footer{
-    margin-top: 270px;
+    margin-top: 530px;
   }
-  footer .social-media a{
-    padding: 8px;
+  footer .social-media a img {
+    height: 8vh;
+    width: 8vw;
   }
 }
 
 @media only screen and (max-width: 426px) {
-  .btns{
-    flex-direction: column;
-    align-items: stretch;
-  }
   .btns button, .btns a{
     justify-content:center;
   }
   footer{
-    margin-top: 290px;
+    margin-top: 500px;
   }
   footer .social-media a{
     padding: 8px;
+  }
+  footer .social-media a img {
+    height: 16vh;
+    width: 16vw;
   }
 }
