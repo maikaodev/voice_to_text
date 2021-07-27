@@ -91,5 +91,4 @@ const themeButton = document.getElementById('checkbox');
 
 themeButton.addEventListener("click", ()=>{
   document.body.classList.toggle('dark');
-
 })

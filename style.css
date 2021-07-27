@@ -39,9 +39,26 @@ header .controlls {
   justify-content: space-between;
   width: 100px;
 }
+
 body.dark {
   background-color: #292c35;
 }
+
+body.dark header .language-select label {
+  color: #fff;
+}
+
+body.dark header .button-copy button i {
+  color: #fff;
+}
+body.dark footer div a i{
+  color: #f1c40f;
+}
+
+body.dark main .box.btns.btn{
+  border: none;
+}
+
 
 header .checkbox {
   opacity: 0;
@@ -93,7 +110,9 @@ header .button-copy i {
   font-size: 24px;
   cursor: pointer;
 }
+
 /* MAIN */
+
 main {
   flex: 1;
 }
