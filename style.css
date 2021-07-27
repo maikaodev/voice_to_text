@@ -15,6 +15,7 @@ body {
   flex-direction: column;
   padding: 16px;
   gap: 16px;
+  transition: background 0.2s linear;
 }
 /* HEADER */
 header {
@@ -32,6 +33,74 @@ header .language-select {
 header .language-select select {
   padding: 4px;
 }
+/* Theme */
+header .controlls {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+body.dark {
+  background-color: #292c35;
+}
+
+body.dark header .language-select label {
+  color: #fff;
+}
+
+body.dark header .button-copy button i {
+  color: #fff;
+}
+
+body.dark footer div a i{
+  color: #fff;
+}
+
+body.dark main .box.btns.btn{
+  border: none;
+}
+
+
+header .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+header .label {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.15);
+}
+
+header .label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.2s linear;
+}
+
+header .checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+header .label .fa-moon {
+  color: #f1c40f;
+}
+
+header .label .fa-sun {
+  color: #f39c12;
+}
 
 header .button-copy #copy-btn {
   background: none;
@@ -42,7 +111,9 @@ header .button-copy i {
   font-size: 24px;
   cursor: pointer;
 }
+
 /* MAIN */
+
 main {
   flex: 1;
 }

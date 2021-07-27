@@ -84,3 +84,11 @@ document.getElementById("copy-btn").addEventListener("click", () => {
   document.getElementById("result").select();
   document.execCommand("copy");
 });
+
+
+const themeButton = document.getElementById('checkbox');
+
+
+themeButton.addEventListener("click", ()=>{
+  document.body.classList.toggle('dark');
+})
