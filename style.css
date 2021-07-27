@@ -51,8 +51,9 @@ body.dark header .language-select label {
 body.dark header .button-copy button i {
   color: #fff;
 }
+
 body.dark footer div a i{
-  color: #f1c40f;
+  color: #fff;
 }
 
 body.dark main .box.btns.btn{
