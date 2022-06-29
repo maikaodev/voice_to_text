@@ -1,26 +1,13 @@
-# App
+## Link 
 
-## Ideias
+https://voicetotext-maikaodev.netlify.app/
 
-- [x] Adicionar botão para enviar texto pro WhatsApp
-- [x] Adicionar botão para enviar texto pro Telegram
+## Funções
 
-## Melhorias
+- É possível converter voz em texto;
+- Atualmente disponível em 3 linguas: Português(Brasil), Inglês(US) e Sueco;
+- Você pode enviar diretamente para o WhatsApp e Telegram.
 
-- [x] Alterar estilos dos share buttons
-- [x] Atualizar link ao alterar textarea
-- [x] Adicionar seleção de idiomas
-- [x] Adicionar um botão para copiar todo o textarea
-- [x] Inserir o link do GitHub na página
-- [x] Inserir icones nos shareButtons
-- [x] Inserir transição nos shareButtons
-- [x] Tamanho dos icones
-- [x] Transf. scale estraga o layout
-- [x] Importar a biblioteca de icones
-- [x] Após pressionar para falar o ícone some
-- [ ] Melhorar mensagem quando API SpeechRecognition não existe
-- [ ] Tratar e exibir erros de permissão e execução
-- [ ] Usar API Navigator.share
-- [ ] Quando trocar o idioma alterar em todo html
-- [ ] Investigar por que não funciona no meu computador
-- [ ] Continuar gravação até o botão parar para falar seja pressionado
+## LinkedIn
+
+https://www.linkedin.com/in/maikaodev/
