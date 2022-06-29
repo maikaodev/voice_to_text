@@ -1,5 +1,11 @@
+Sentry.init({
+  dsn: "https://3a7969f367fc4b1ca5fb52b1bf602ef7@o1293519.ingest.sentry.io/6516131",
+  integrations: [new Sentry.BrowserTracing()],
+  tracesSampleRate: 1.0,
+});
+
 const buttonControl = document.querySelector(".btn.control"); //Encadear classe não pode ter espaço.
-const buttonControlText = buttonControl.querySelector("span")
+const buttonControlText = buttonControl.querySelector("span");
 const buttonTelegram = document.querySelector(".btn.telegram");
 const buttonWhatsApp = document.querySelector(".btn.whatsapp");
 const textarea = document.querySelector(".text");
@@ -49,6 +55,8 @@ function createRecognition() {
 
   recognition.onerror = (err) => {
     console.error(err);
+    alert("Ops! Aconteceu algo de errado, tente em outro navegador.");
+    Sentry.captureException(err);
   };
 
   recognition.onresult = (evt) => {
@@ -85,10 +93,8 @@ document.getElementById("copy-btn").addEventListener("click", () => {
   document.execCommand("copy");
 });
 
+const themeButton = document.getElementById("checkbox");
 
-const themeButton = document.getElementById('checkbox');
-
-
-themeButton.addEventListener("click", ()=>{
-  document.body.classList.toggle('dark');
-})
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
